@@ -3,7 +3,7 @@ from torch import nn
 import matplotlib.pyplot as plt
 
 
-weight = 1.0
+weight = 4.0
 bias = 2.1
 
 
@@ -65,7 +65,7 @@ while current_loss > target_loss:
     loss.backward()
     optimizer.step()
     
-    if epoch % 5 == 0:
+    if epoch % 10 == 0:
         print(f"Epoch {epoch}: Loss = {current_loss}")
     
     epoch += 1
